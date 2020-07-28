@@ -1,24 +1,14 @@
 import React from 'react';
 import './App.css';
-import Lottie from 'react-lottie';
-import animation from "./components/animation.json"
+import NavBar from "./components/NavBar";
+import TopAnimation from "./components/TopAnimation";
 
 function App() {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animation,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
+  
   return (
     <div>
-      <Lottie
-        options={defaultOptions}
-        height={400}
-        width={400}
-      />
+      <NavBar />
+      <TopAnimation />
     </div>
   );
 }
