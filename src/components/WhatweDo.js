@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import useWebAnimations, { slideInRight, } from "@wellyshen/use-web-animations";
 
-
 const useStyles = makeStyles({
   root: {
     width: '100%',
@@ -17,23 +16,21 @@ const useStyles = makeStyles({
 
 const WhatWeDo = () => {
   // const { ref } = useWebAnimations({ ...slideInRight})
+  // FOR LOTTIE ANIMATION
   const { keyframes, timing } = slideInRight;
   const { ref } = useWebAnimations({
-  keyframes,
-  timing: {
-    ...timing,
-    // delay: 1000, // Delay 1s
-    iterations: 1,
-    duration: 10000, // Speed up the animation
-  },
-});
-  
+    keyframes,
+    timing: {
+      ...timing,
+      // delay: 1000, // Delay 1s
+      iterations: 1,
+      duration: 10000, // Speed up the animation
+    },
+  });
 
 
-
-
+  // FOR TEXT ANIMATION
   const classes = useStyles();
-
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -44,13 +41,12 @@ const WhatWeDo = () => {
   };
 
   return (
- 
- 
- 
- 
+
     <div style={{
       display: "flex",
       alignItems: "center",
+      backgroundColor: "rgb(96, 115, 255)",
+      color: "white",
     }}>
 
       <div>
@@ -61,7 +57,7 @@ const WhatWeDo = () => {
         />
       </div>
 
-      <div className="target" ref={ref}>
+      <div ref={ref}>
         <div className={classes.root}>
 
           <Typography variant="h3" gutterBottom>
@@ -77,8 +73,8 @@ const WhatWeDo = () => {
           <Typography variant="overline" display="block" gutterBottom>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
         </Typography>
-          </div>
         </div>
+      </div>
     </div>
   )
 }
