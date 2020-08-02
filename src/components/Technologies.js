@@ -28,7 +28,7 @@ const SingleAnimation = ({ animationName, technologyName }) => {
 const Technologies = () => {
 
     return (
-        <div>
+        <div id="technology">
             <h1 style={{textAlign: "center"}}> Technology We Teach!</h1>
             <div style={{
                 display: "flex",

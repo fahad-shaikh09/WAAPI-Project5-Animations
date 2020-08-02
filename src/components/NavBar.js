@@ -23,52 +23,48 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function handleClick(event) {
-  event.preventDefault();
-  console.info('You clicked a breadcrumb.');
-}
+// function handleClick(event) {
+//   event.preventDefault();
+//   console.info('You clicked a breadcrumb.');
+// }
 
 export default function NavBar() {
   const classes = useStyles();
 
   return (
-    <Breadcrumbs style={{backgroundColor: "rgb(96, 115, 255)",
-                        height: "30px",
-                        textAlign: "center",
-                        color: "white", 
-                        fontWeight: "bold",
-                        paddingTop: "10px",
-                        paddingBottom: "10px",
-                        paddingLeft: "650px",
-                        alignItems: "right",
+    <Breadcrumbs style={{
+      backgroundColor: "rgb(96, 115, 255)",
+      height: "30px",
+      textAlign: "center",
+      color: "white",
+      fontWeight: "bold",
+      paddingTop: "10px",
+      paddingBottom: "10px",
+      paddingLeft: "650px",
+      alignItems: "right",
     }} aria-label="breadcrumb">
-      <Link color="inherit" href="/" onClick={handleClick} className={classes.link}>
+      <Link href="#home" className={classes.link}>
         <HomeIcon className={classes.icon} />
         HOME
       </Link>
 
-      <Link
-        color="inherit"
-        href="/getting-started/installation/"
-        onClick={handleClick}
-        className={classes.link}
-      >
+      <Link href="#ourservices"  className={classes.link}>
         <WhatshotIcon className={classes.icon} />
         SERVICES
       </Link>
 
-      <Link color="textPrimary" className={classes.link}>
+      <Link href="#whoweserve" color="textPrimary" className={classes.link}>
         <GrainIcon className={classes.icon} />
-        COURSES
+        WHO WE SERVE
       </Link>
 
-      <Link color="textPrimary" className={classes.link}>
+      <Link href="#technology" color="textPrimary" className={classes.link}>
         <CloudIcon className={classes.icon} />
         TECHNOLOGY
       </Link>
 
 
-      <Link color="textPrimary" className={classes.link}>
+      <Link href="#contact" color="textPrimary" className={classes.link}>
         <AddIcCallIcon className={classes.icon} />
         CONTACT
       </Link>

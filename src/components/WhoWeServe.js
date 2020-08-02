@@ -54,7 +54,7 @@ const WhoWeServe = () => {
   };
 
   return (
-    <div style={
+    <div id="whoweserve" style={
       {
         display: "flex",
         justifyContent: "space-around"

@@ -42,8 +42,7 @@ const WhatWeDo = () => {
   };
 
   return (
-
-    <div style={{
+    <div id="ourservices" style={{
       display: "flex",
       alignItems: "center",
       backgroundColor: "rgb(96, 115, 255)",
