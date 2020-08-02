@@ -2,10 +2,11 @@ import React from 'react';
 import './App.css';
 import NavBar from "./components/NavBar";
 import TopAnimation from "./components/TopAnimation";
-import WhatWeDo from "./components/WhatweDo"
-import WhoWeServe from "./components/WhoWeServe"
-import Technologies from "./components/Technologies"
- 
+import WhatWeDo from "./components/WhatweDo";
+import WhoWeServe from "./components/WhoWeServe";
+import Technologies from "./components/Technologies";
+import ContactUs from "./components/ContactUs";
+
 function App() {
   
   return (
@@ -15,6 +16,7 @@ function App() {
       <WhatWeDo />
       <WhoWeServe />
       <Technologies />
+      <ContactUs />
     </div>
   );
 }

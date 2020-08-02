@@ -11,6 +11,7 @@ const useStyles = makeStyles({
     width: '100%',
     maxWidth: 500,
     padding: 100,
+    
   },
 });
 
@@ -23,7 +24,7 @@ const WhatWeDo = () => {
     timing: {
       ...timing,
       // delay: 1000, // Delay 1s
-      iterations: 1,
+      iterations: Infinity,
       duration: 10000, // Speed up the animation
     },
   });
@@ -47,6 +48,8 @@ const WhatWeDo = () => {
       alignItems: "center",
       backgroundColor: "rgb(96, 115, 255)",
       color: "white",
+      width: "100vw",
+    
     }}>
 
       <div>
@@ -63,7 +66,7 @@ const WhatWeDo = () => {
           <Typography variant="h3" gutterBottom>
             Our Services
         </Typography>
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h5" gutterBottom>
             We Value Our Clients!
         </Typography>
 
@@ -71,7 +74,7 @@ const WhatWeDo = () => {
             Give us a chance to serve you!
         </Typography>
           <Typography variant="overline" display="block" gutterBottom>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos laborum fugiat deleniti? Eum quasi quidem quibusdam.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit..
         </Typography>
         </div>
       </div>
