@@ -40,7 +40,7 @@ phases:
       # install dependencies
       - yarn
       # so that build commands work
-      - yarn add eslint-config-react-app
+      #- yarn add eslint-config-react-app
 
   build:
     commands:
